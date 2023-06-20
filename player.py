@@ -4,6 +4,8 @@ from support import import_folder
 class Player(pygame.sprite.Sprite):
     def __init__(self,pos):
         super().__init__()
+        self.import_character_assets()
+        self.frame.index = 0
         self.image = pygame.Surface((32,64))
         self.image.fill('red')
         self.rect = self.image.get_rect(topleft=pos)
@@ -16,7 +18,7 @@ class Player(pygame.sprite.Sprite):
 
 def import_character_assets(self):
     character_path = '../graphics/character/'
-    self.animations ={'idle':[], 'run':[], 'jump':[], 'fall':[]}
+    self.animations = {'idle':[], 'run':[], 'jump':[], 'fall':[]}
 
     for animation in self.animations.keys():
         full_path = character_path + animation
