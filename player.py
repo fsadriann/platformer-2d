@@ -34,4 +34,3 @@ class Player(pygame.sprite.Sprite):
 
     def update(self):
         self.get_input()
-        self.apply_gravity()
