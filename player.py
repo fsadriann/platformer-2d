@@ -1,4 +1,3 @@
-from typing import Any
 import pygame
 
 class Player(pygame.sprite.Sprite):

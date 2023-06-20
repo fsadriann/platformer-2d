@@ -46,7 +46,7 @@ class Level:
 
     def run(self):
         #level tiles
-        self.tiles.update(0)
+        self.tiles.update(self.world_shift)
         self.tiles.draw(self.display_surface)
 
         # player
